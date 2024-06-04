@@ -27,6 +27,7 @@ pipeline {
             steps{
                 sh '''
                 echo "Test Stage"
+                cd build
                 if [ -f index.html ]
                 then 
                     echo "index.html is present"
