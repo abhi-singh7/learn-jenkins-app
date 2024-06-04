@@ -27,6 +27,12 @@ pipeline {
             steps{
                 sh '''
                 echo "Test Stage"
+                if [ -f index.html ]
+                then 
+                    echo "index.html is present"
+                else 
+                    echo "index.html is not present"
+                fi
                 '''
             }
         }
